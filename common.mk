@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     WifiResTarget
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
 # Inherit virtual_ab_ota product
